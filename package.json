@@ -1,0 +1,35 @@
+{
+  "name": "torrent-search-api-with-website",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+  },
+  "keywords": [],
+  "author": "Ryuk_me, bipuldey19",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.14",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {},
+  "description": "> API for scraping torrents from 1337x, Piratebay, Eztv, Nyaasi, Torlock, YTS , Torrent Galaxy , Rarbg and Ettv\r ---\r # How to install",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuk-me/Torrents-Api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ryuk-me/Torrents-Api/issues"
+  },
+  "homepage": "https://github.com/Ryuk-me/Torrents-Api#readme"
+}

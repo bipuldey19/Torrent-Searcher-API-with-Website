@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="https://drive.google.com/uc?id=1YqD6qORGBGsS8t4Q8ep08NbWxHMPJhZk">
+    <title>Torrent Searcher With API</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <div class="brand">
+        <img
+          src="https://drive.google.com/uc?id=1YqD6qORGBGsS8t4Q8ep08NbWxHMPJhZk"
+          alt="logo"
+        />
+        <a href="#">
+          <h2 class="name">Torrent Searcher</h2>
+        </a>
+      </div>
+      <div class="social">
+        <a href="https://github.com/bipuldey19"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/bipuldey19"><i class="fab fa-telegram"></i></a>
+      </div>
+    </header>
+    <section>
+      <form>
+        <fieldset>
+          <legend>Torrent Searcher</legend>
+          <input type="text" id="search" placeholder="Search query..." />
+          <select name="providers" id="providers">
+            <option value="1337x" selected>1337x</option>
+            <option value="nyaasi">Nyaasi</option>
+            <option value="yts">Yts</option>
+            <option value="Piratebay">Piratebay</option>
+            <option value="torlock">Torlock</option>
+            <option value="eztv">Eztv</option>
+            <option value="tgx">Torrent Galaxy</option>
+            <option value="rarbg">Rarbg</option>
+            <option value="ettv">Ettv</option>
+            <option value="zooqle">Zooqle</option>
+            <option value="kickass">KickAss</option>
+            <option value="bitsearch">BitSearch</option>
+            <option value="glodls">Glodls</option>
+            <option value="magnetdl">Magnetdl</option>
+            <option value="limetorrent">Limetorrent</option>
+            <option value="torrentfunk">Torrentfunk</option>
+            <option value="torrentproject">Torrentproject</option>
+          </select>
+        </fieldset>
+        <button type="submit" id="button">
+          <span class="spinner"
+            >Searching <i class="fas fa-spin fa-spinner"></i></span
+          ><span class="searchText">Search</span>
+        </button>
+      </form>
+    </section>
+    
+    <div id="SearchResultsBox">
+      <h3 class="heading">Search Results</h3>
+      <div id="searchResults" ></div>
+    </div>
+  </div>
+
+  <footer>
+    <a class="credit" href="https://github.com/bipuldey19">© Bipul Dey 2021</a>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

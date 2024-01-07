@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #0d1117;
+}
+
+header {
+  margin: 3vh 1vw;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #161b22;
+  border-radius: 30px;
+  background-color: #161b22;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+}
+
+header:hover,
+section:hover {
+  box-shadow: 0px 0px 15px black;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  /*Optional if you want to give logo not name then cut the display: none; from here and paste it in the name section*/
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  margin-left: 1vw;
+  font-size: 1.5rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+
+.social a {
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 1vw;
+}
+
+.social a:hover,
+.brand:hover {
+  filter: invert(0.3);
+}
+
+section {
+  margin: 0vh 1vw;
+  margin-bottom: 6vh;
+  padding: 1vh 3vw;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+  background-color: #161b22;
+  color: white;
+}
+
+.card {
+  padding: 1vh 1vw;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+}
+
+section form {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+section form fieldset {
+  border-color: rgba(255, 255, 255, 0.11);
+}
+
+section form fieldset legend {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 0.3rem 0 0.3rem;
+  margin-bottom: -0.3rem;
+}
+
+section form fieldset {
+  background-color: #0d1117;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 0.7rem;
+  margin-top: 2vh;
+  display: flex;
+}
+
+section input[type="text"] {
+  border-radius: 20px;
+  outline: none;
+  width: 50vw;
+  height: 4vh;
+  padding: 1rem;
+  margin: 0.5vh;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  background-color: #3e475531;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+section input[type="text"]:focus {
+  border-color: rgba(255, 255, 255, 0.404);
+}
+
+#providers {
+  outline: none;
+  margin: 0.5vh;
+  padding: 0 0 0 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  background: #3e475531;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#providers option {
+  color: white;
+  background-color: #0d1117;
+}
+
+section button {
+  border-radius: 20px;
+  margin-top: 1vh;
+  width: 100%;
+  height: 5.5vh;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  background-color: #0d1117;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+section button:hover,
+section button:focus {
+  background-color: rgba(255, 255, 255, 0.068);
+}
+
+.spinner {
+  display: none;
+}
+
+#SearchResultsBox {
+  margin: 0vh 1vw;
+  margin-bottom: 10vh;
+  padding: 1vh 3vw;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+  background-color: #161b22;
+  color: white;
+  word-wrap: break-word;
+}
+
+#SearchResultsBox .heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
+.torrent {
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 13rem;
+  height: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  background-color: #0d1117;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.torrent i {
+  margin-right: 0.2rem;
+}
+
+hr{
+  margin: 1rem 0 0 0;
+}
+
+.error{
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.credit{
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  display: table;
+  margin: 0 auto;
+  transition: text-decoration 300ms ease;
+}
+
+.credit:hover, .credit:focus, .credit:active{
+  text-decoration: underline;
+}
+
+.wrapper {
+  min-height: calc(100vh - 70px);
+}
+footer {
+  height: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+  section form {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  section form fieldset {
+    min-width: 89.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section label {
+    margin-left: 3vw;
+    margin-top: 1vh;
+  }
+
+  section input[type="text"] {
+    width: calc(100% - 0.3rem);
+  }
+
+  section button {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    height: 2.7rem;
+  }
+
+  section span {
+    margin-left: 5%;
+  }
+  .torrent {
+    display: table;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 40vh;
+    height: 5.5vh;
+    font-size: 0.7rem;
+  }
+  .btns {
+    display: flex;
+  }
+  .card {
+    padding: 2vh 4vw;
+    border: 2px solid rgba(255, 255, 255, 0.11);
+  }
+
+}
